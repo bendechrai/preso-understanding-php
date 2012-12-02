@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-	<script src="jquery-1.8.1.min.js" type="text/javascript"></script>
+	<script src="../jquery-1.8.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript"><!--
 		$(document).ready( function() {
 			$('a.evil').bind('click', function(a){
