@@ -26,9 +26,9 @@ Session:
 <pre><?php print_r($_SESSION); ?></pre>
 <ul>
 	<li><a href="good.php">refresh</a></li>
-	<li><a href="api/login" class="ajax">login</a></li>
-	<li><a href="api/logout" class="ajax">logout</a></li>
-	<li><a href="api/addToCart" class="ajax">add something to the cart</a></li>
-	<li><a href="api/setAddress?address=My+Real+Address" class="ajax">set address</a></li>
-	<li><a href="api/payment" class="ajax">pay</a></li>
+	<li><a href="api.php/login" class="ajax">login</a></li>
+	<li><a href="api.php/logout" class="ajax">logout</a></li>
+	<li><a href="api.php/addToCart" class="ajax">add something to the cart</a></li>
+	<li><a href="api.php/setAddress?address=My+Real+Address" class="ajax">set address</a></li>
+	<li><a href="api.php/payment" class="ajax">pay</a></li>
 </ul>

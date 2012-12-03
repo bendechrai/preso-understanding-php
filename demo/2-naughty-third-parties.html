@@ -9,8 +9,14 @@
 		<frame src="0-access-log/index.php" />
 	</frameset>
 	<frameset cols="50%,50%">
-		<frame src="2-naughty-third-parties/good.php" />
-		<frame src="2-naughty-third-parties/evil.php" />
+		<frameset rows="45,100%">
+			<frame scrolling="no" src="good.html" />
+			<frame src="http://good.com/talks/understanding-php/2-naughty-third-parties/good.php" />
+		</frameset>
+		<frameset rows="45,100%">
+			<frame scrolling="no" src="evil.html" />
+			<frame src="http://evil.com/talks/understanding-php/2-naughty-third-parties/evil.php" />
+		</frameset>
 	</frameset>
 </frameset>
 </html>
