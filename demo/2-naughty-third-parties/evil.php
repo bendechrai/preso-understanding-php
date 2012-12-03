@@ -10,9 +10,13 @@ session_start();
 				var img = new Image();
 				img.src = a.currentTarget.href;
 				a.originalEvent.preventDefault();
+                $('#log').val("var img = new Image();\nimg.src = \"" + a.currentTarget.href + "\";\na.originalEvent.preventDefault();");
 			});
 		});
 	// --></script>
+    <style>
+        textarea{ width: 100%; height: 100px }
+    </style>
 </head>
 <body>
 <h1>Evil thief</h1>
@@ -24,4 +28,5 @@ Session:
 	<li><a href="http://localhost/talks/understanding_php/2-naughty-third-parties/api/addToCart" class="evil">add something to the cart</a></li>
 	<li><a href="http://localhost/talks/understanding_php/2-naughty-third-parties/api/setAddress?address=Thief's+Address" class="evil">set address</a></li>
 </ul>
+<textarea id="log"></textarea>
 

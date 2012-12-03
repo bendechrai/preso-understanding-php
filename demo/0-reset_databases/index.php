@@ -18,7 +18,6 @@ if( isset($_POST['submit']) ) {
 	$db->exec("INSERT INTO user (username, password, admin) VALUES ('ben', 'password', 0)");
 	$db->exec("INSERT INTO user (username, password, admin) VALUES ('administrator', 'complex', 1)");
 
-	echo "DB Reset<br/><br/>";
 }
 ?>
 <form action="#" method="post"><input type="submit" name="submit" value="Reset Databases"/></form>
