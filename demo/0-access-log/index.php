@@ -1,7 +1,7 @@
 <pre><?php
 echo "Last collected: "; passthru('tail -n1 '.dirname(__FILE__).'/../collect.txt');
 echo "\n";
-passthru('grep -v "0-" /var/log/apache2/localhost-access.log|tail -n4|tac|awk \'{print $7" from "$11}\'');
+passthru('grep -v "0-" ../../demo.log/access.log|tail -n4|tac|awk \'{print $7" from "$11}\'');
 ?></pre>
 <script>
 setTimeout( function() { location.reload() }, 1000 );

